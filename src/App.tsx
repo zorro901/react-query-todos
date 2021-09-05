@@ -2,6 +2,7 @@ import { VFC } from 'react'
 import { BrowserRouter ,Route,Switch} from 'react-router-dom'
 import { QueryClient,QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
+import { MainTask } from './components/MainTask'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -19,7 +20,7 @@ const App:VFC =()=> {
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
-              {/*<MainTask />*/}
+              <MainTask />
             </Route>
             <Route exact path="/tags">
               {/*<MainTag />*/}
